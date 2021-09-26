@@ -8,7 +8,7 @@ public class Radio {
     private int minVolume = 0;
     private int maxVolume = 10;
     private int currentVolume;
-    private  boolean on = true;
+    private boolean on = true;
 
     public String getName() {
         return name;
@@ -62,18 +62,20 @@ public class Radio {
         return on;
     }
 
-    public void pressNextRadioStation () {
-        if (currentRadioStation >= maxRadioStation){
+    public void pressNextRadioStation() {
+        if (currentRadioStation >= maxRadioStation) {
             setCurrentRadioStation(minRadioStation);
-        } else
-        setCurrentRadioStation(currentRadioStation +1);
+        } else {
+            setCurrentRadioStation(currentRadioStation + 1);
+        }
     }
 
-    public void pressPrevRadioStation () {
-        if (currentRadioStation <= minRadioStation){
+    public void pressPrevRadioStation() {
+        if (currentRadioStation <= minRadioStation) {
             setCurrentRadioStation(maxRadioStation);
-        } else
+        } else {
             setCurrentRadioStation(currentRadioStation - 1);
+        }
     }
 
     public void increaseVolume() {

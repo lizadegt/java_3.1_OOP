@@ -14,8 +14,9 @@ class RadioTest {
         radio.setName(expected);
         assertEquals(expected, radio.getName());
     }
+
     @Test
-    public void offRadioStation () {
+    public void offRadioStation() {
         Radio radio = new Radio();
         radio.isOn();
         assertTrue(radio.isOn());
@@ -38,6 +39,7 @@ class RadioTest {
 
         assertEquals(5, radio.getCurrentRadioStation());
     }
+
     @Test
     public void prevStationToMinimum() {
         Radio radio = new Radio();
